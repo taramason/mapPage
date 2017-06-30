@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>map</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- <link type="text/css" rel="stylesheet" href="css/styles.css"  media="screen,projection"/> -->
+    <!-- <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/template.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/innerContent.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/KioskLocationResults.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/grid-flex2.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/default.css"  media="screen,projection"/> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link type="text/css" rel="stylesheet" href="css/updateStyles.css"  media="screen,projection"/>
+  </head>
+
+<!-- <a href="index2.html">Other Index.html</a> -->
+
+
+
+  <body>
+    <!-- <div class="col-lg-12 topSearch">
+      <div class="kiosksArea">
+        <h1 class="centerText">Ready to find a kiosk?</h1>
+        <h3 class="centerText">Enter your location in the box below.</h3>
+      </div>
+    </div> -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 left2">
+          <div class="spacer"></div>
+          <input type="text" value="" name="address" id="search_input_redesign" placeholder="Enter ZIP or city and state.">
+  <!-- SEARCH BUTTON -->
+          <div id="button2" class="searchButton searchSubmitRedesign">
+            Search
+          </div>
+          <p class="smallcopy">*NO FEE eGift Card options vary by location and may be temporarily unavailable at some Kroger stores: Kroger, Dillon Food Stores, Food 4 Less, Fred Meyer, Fry’s Food Stores, Jay C Food Store, King Soopers, Ralphs Grocery, Smith’s Food & Drug, Quality Food Centers, and Ruler Foods.</p>
+
+            <div class="kioskHeader coinstarHeader">
+              <div class="kioskSelector CoinstarKioskSelector">
+                <div class="checkboxContainer">
+                  <input class="checkbox" type="checkbox" name="coinstarResults" id="chk_coinstarResults">
+                  <label for="chk_coinstarResults"></label>
+                </div>
+                <div class="kioskTitleContainer">
+                  <h4 class="headerTitle">Coinstar</h4>
+                  <h3 class="headerSubtitle">Cash in your coins</h3>
+                </div>
+              </div>
+              <div class="kioskSelectorIcon"></div>
+            </div>
+
+  <!-- KIOSK COUNTER-ALL LOCATIONS NEAR YOU -->
+          <div id="kioskCounts">
+            <ul>
+              <li>
+                <div id="kioskCountsTitle">
+                  <strong>Kiosks Found:</strong>
+  <!-- MAP BUTTON -->
+                    <div  class="showButton showMap">Map</div>
+                    <!-- need to create onclick to toggle showin the map -->
+                    <!-- <button type="button" class="showButton showDirections"></button> -->
+                    <!-- </div> -->
+                </div>
+              </li>
+              <li>
+                <div id="kioskCountsNumbers">
+  <!-- TOTAL COUNT OF KIOSKS HERE -->
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="defaultResults" class="searchResultsRedesign">
+            <div id="resultsTab">
+              <div id="kioskResultList">
+                <ul id="sResultsUL" class="searchResults">
+  <!-- THINGS HAPPEN HERE WHEN BUTTON CLICKED -->
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 right2">
+          <div id="map" class="map"></div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKA9BWVHZ0-fZYpbAL0Jgg5PJrydT3Gr4&callback=initMap"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/common.js"></script>
+    <!-- <script src="javascripts/landingPageScript.js"></script> -->
+    <script src="javascripts/responsiveslides.min.js"></script>
+  </body>
+</html>
